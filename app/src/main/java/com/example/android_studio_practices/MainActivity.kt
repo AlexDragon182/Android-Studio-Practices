@@ -1,8 +1,12 @@
 package com.example.android_studio_practices
 
-import androidx.appcompat.app.AppCompatActivity
+
+
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
+
+
 
 class MainActivity : AppCompatActivity() {//activities are a single screen on the device.
     //class that describes what an activity is
@@ -11,6 +15,10 @@ class MainActivity : AppCompatActivity() {//activities are a single screen on th
         super.onCreate(savedInstanceState)
         Log.d("MainActivity","this is our first log message") // to create log messages
         setContentView(R.layout.activity_main)//layout type
+
+
+
+
     }//comments
     // Ctrl + O to ovewrite functions of an activity
 
@@ -42,4 +50,5 @@ class MainActivity : AppCompatActivity() {//activities are a single screen on th
 
 //grey links belong to framework and blue links belong to proyect(can help)
 
-//
+//to use a button you need to assign an ID
+
