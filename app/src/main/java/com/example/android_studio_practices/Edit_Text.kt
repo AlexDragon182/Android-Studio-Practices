@@ -3,7 +3,7 @@ package com.example.android_studio_practices
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-class Eddit_Text : AppCompatActivity() {
+class Edit_Text : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
