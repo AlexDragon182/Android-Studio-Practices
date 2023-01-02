@@ -13,6 +13,41 @@
         android:theme="@style/Theme.Android_Studio_Practices"
         tools:targetApi="31">
         <activity
+            android:name=".Passing_Data_to_this"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Passing_Data_to_this_activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".WillBeOpen_Activity" />
+        <activity android:name=".CheckBox_RadioButtons" />
+        <activity android:name=".Constraint_Layout" />
+        <activity android:name=".Edit_Text" />
+        <activity android:name=".ImageViews" />
+        <activity android:name=".Text_View" />
+        <activity android:name=".Toast" />
+        <activity
+            android:name=".Intents_and_Starting_Activities"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ViewBindingBasic"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

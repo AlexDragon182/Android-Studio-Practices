@@ -2,15 +2,19 @@ package com.example.android_studio_practices
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.android_studio_practices.databinding.ImageviewsBinding
 
 class ImageViews : AppCompatActivity() {
 
+    private lateinit var binding: ImageviewsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.imageviews)
+        binding = ImageviewsBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        btnAddImage.SetonClickListenet{
-            ivCat.setImgaeResource(R.drawable.Cat)
+
+            binding.btnAddImage.setOnClickListener(){
+            binding.ivCat.setImageResource(R.drawable.Cat)
 
         }
     }

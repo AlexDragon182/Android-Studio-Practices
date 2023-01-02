@@ -3,20 +3,23 @@ package com.example.android_studio_practices
 import android.os.Bundle
 import android.widget.RadioButton
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.android_studio_practices.databinding.CheckboxRadiobuttonsBinding
 
 class CheckBox_RadioButtons : AppCompatActivity() {
 
+    private lateinit var binding: CheckboxRadiobuttonsBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.checkbox_radiobuttons)
+        binding = CheckboxRadiobuttonsBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    btnOrder.setOnClickListener() {
-        val checkedradioMeatGroupId = rgMeat.checkedRadioButtonId
+    binding.btnOrder.setOnClickListener() {
+        val checkedradioMeatGroupId = binding.rgMeat.checkedRadioButtonId
         val meat = findViewById<RadioButton>(checkedradioMeatGroupId)
-        val cheese = cbCheese.isChecked
-        val onions = cbOnions.isChecked
-        val salad = cbSalad.isChecked
+        val cheese = binding.checkBox2.isChecked
+        val onions = binding.checkBox.isChecked
+        val salad = binding.checkBox3.isChecked
         val orderString = "You ordered your burger with \n" + "${meat.text}"+
                 (if(cheese) "\nCheese" else "")
         (if(onions) "\nOnions" else "")
