@@ -14,7 +14,7 @@ class ImageViews : AppCompatActivity() {
 
 
             binding.btnAddImage.setOnClickListener(){
-            binding.ivCat.setImageResource(R.drawable.Cat)
+            binding.ivCat.setImageResource(R.drawable.cat)
 
         }
     }
