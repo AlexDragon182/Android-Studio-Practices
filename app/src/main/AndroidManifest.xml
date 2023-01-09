@@ -18,6 +18,20 @@
         android:theme="@style/Theme.Android_Studio_Practices"
         tools:targetApi="31">
         <activity
+            android:name=".BroadcastReceivers"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DragAndDrop"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Intent_Service"
             android:exported="false">
             <meta-data
@@ -149,8 +163,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <service android:name=".ServicetoIntent"/>
-        <service android:name=".Service1"/>
+
+        <service android:name=".ServicetoIntent" />
+        <service android:name=".Service1" />
     </application>
 
 </manifest>
